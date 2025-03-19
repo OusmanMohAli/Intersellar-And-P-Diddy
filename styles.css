@@ -1,0 +1,64 @@
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Create the starry background */
+body, html {
+    height: 100%;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+/* The container of the space theme */
+.space {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('https://source.unsplash.com/1600x900/?space') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Spaceship Styling */
+.spaceship {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background: url('https://img.icons8.com/ios/452/spaceship.png') no-repeat center center;
+    background-size: contain;
+    transform: translateX(-50%);
+}
+
+/* Controls container */
+.controls {
+    position: absolute;
+    top: 10%;
+    z-index: 10;
+    color: white;
+    font-size: 18px;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
